@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+{% block content %}
+<center>
+<h1>Hi {{name}} welcome to stockPy!</h1>
+<img src="https://i.imgur.com/Cyp4I4k.png" height="300px" width="600px">
+<br>
+<br>
+<div class="white-box">
+<form action = "betaCalc">
+    <label for="betaTicker"><b>Beta calculator:</b></label><br> 
+    <input type="text" name="betaTicker"><br>
+    <input type="submit">
+</form>
+<br>
+<br>
+<form action = "peCalc">
+    <label for="peTicker"><b>P/E calculator:</b></label><br> 
+    <input type="text" name="peTicker"><br>
+    <input type="submit">
+</form>
+<br>
+<br>
+<form action = "avgGrowth">
+    <label for="growthTicker"><b>Growth calculator:</b></label><br>
+    <input type="text" name="growthTicker"><br>
+    <br>
+    <label for="startYear">From (YYYY):</label><br>
+    <input type="text" name="startYear"><br>
+    <br>
+    <label for="endYear">To (YYYY):</label><br>
+    <input type="text" name="endYear"><br>
+    <input type="submit">
+</form>
+<br>
+<br>
+<form action = "years">
+    <label for="yearsTicker"><b>Growth calculator:</b></label><br>
+    <input type="text" name="yearsTicker"><br>
+    <input type="submit">
+</form>
+<br>
+<br>
+<form action = "revenueCalc">
+    <label for="revenueTicker"><b>Income statement:</b></label><br>
+    <input type="text" name="revenueTicker"><br>
+    <input type="submit">
+</form>
+</div>
+{% endblock %}
+</center>

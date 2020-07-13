@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{{result}}
+<br>
+<img src="data:image/png;base64,{{ graphic|safe }}">
+<img src="data:image/png;base64,{{ revGraph|safe }}">
+{% endblock %}
